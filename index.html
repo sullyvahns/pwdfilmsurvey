@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Preferences and Viewing Habits</title>
+    <link href="styles.css" ref="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="https://cdn.discordapp.com/icons/1109435076162355270/bef051a7336f0820631df35cd6bcbce0.webp?size=96" alt="Project Wild Department Server Icon" />
+        <h1 id="title" class="text-center">Project Wild Department Film Preferences and Viewing Habits</h1>
+        <p id="description" class="description text-center">Thank you for your participation in helping to understand more about Project Wild Department's preferences in films and their viewing habits. This survey will only take about five to ten minutes of your time. </p>
+      </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name"> Full Name <span class="clue">(ex. Dela Cruz, Juan)</span>:</label> 
+          <input id="name" name="name-identification" type="text" class="form-control" placeholder="Enter your Full Name" required />
+        </div>
+
+        <div class="form-group">
+          <label id="username-label" for="username"> Discord Username: </label>
+          <input id="username" name="name-identification" type="text" class="form-control" placeholder="Enter your Username" required />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email"> Email: </label>
+          <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"> Age <span class="clue">(optional)</span>: </label>
+          <input id="number" name="age" type="number" class="form-control" placeholder="Enter your Age" min="13" max="120">
+        </div>
+
+        <div class="form-group"> 
+          <p>Which option best describes your role?</p>
+            <select id="dropdown" name="dropdown" class="form-control" required>
+              <option value="">Select Current Role</option>
+              <option value="student">Student</option>
+              <option value="ft-job">Full Time Job</option>
+              <option value="ft-learner">Full Time Learner</option>
+              <option value="prefernot">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+        <p>How often do you watch films?</p>
+          <label><input name="watch-frequency" value="daily" type="radio" class="input-radio" checked /> Daily </label>
+          <label><input name="watch-frequency" value="several-times-a-week" type="radio" class="input-radio" /> Several times a week </label>
+          <label><input name="watch-frequency" value="once-a-week" type="radio" class="input-radio" /> Once a week </label>
+          <label><input name="watch-frequency" value="few-times-a-month" type="radio" class="input-radio" /> A few times a month </label>
+          <label><input name="watch-frequency" value="rarely" type="radio" class="input-radio" /> Rarely </label>
+        </div>
+          
+        <div class="form-group">
+          <p>What are your favorite film genres? <span class="clue">(Select all that apply)</span></p>
+            <label><input name="film-genre" value="action" type="checkbox" class="input-checkbox" checked /> Action </label>
+            <label><input name="film-genre" value="comedy" type="checkbox" class="input-checkbox" /> Comedy </label>
+            <label><input name="film-genre" value="drama" type="checkbox" class="input-checkbox" /> Drama </label>
+            <label><input name="film-genre" value="horror" type="checkbox" class="input-checkbox" /> Horror </label>
+            <label><input name="film-genre" value="science-fiction" type="checkbox" class="input-checkbox" /> Science Fiction </label>
+            <label><input name="film-genre" value="romance" type="checkbox" class="input-checkbox" /> Romance </label>
+            <label><input name="film-genre" value="documentary" type="checkbox" class="input-checkbox" /> Documentary </label>
+            <label><input name="film-genre" value="animation" type="checkbox" class="input-checkbox" /> Animation </label>
+            <label><input name="film-genre" value="thriller" type="checkbox" class="input-checkbox" /> Thriller </label>
+            <label><input name="film-genre" value="fantasy" type="checkbox" class="input-checkbox" /> Fantasy </label>
+            <label><input name="film-genre" value="experimental" type="checkbox" class="input-checkbox" /> Experimental </label>
+          </div>
+
+        <div class="form-group">
+          <p>Who is your favorite film director?</p>
+            <textarea id="fave-director" name="fave-director" class="input-textarea" placeholder="Enter text" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite film of all time?</p>
+            <textarea id="fave-film" name="fave-film" class="input-textarea" placeholder="Enter text" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Who is your favorite actor or actress?</p>
+            <textarea id="fave-actor-actress" name="fave-actor-actress" class="input-textarea" placeholder="Enter text" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <p>Where do you usually watch films? <span class="clue">(Select all that apply)</span></p>
+            <label><input name="place-to-watch-films" value="at-the-cinema" type="checkbox" class="input-checkbox" checked /> At the cinema </label>
+            <label><input name="place-to-watch-films" value="at-home-on-TV" type="checkbox" class="input-checkbox" /> At home on TV </label>
+            <label><input name="place-to-watch-films" value="on-a-computer" type="checkbox" class="input-checkbox" /> On a computer </label>
+            <label><input name="place-to-watch-films" value="on-a-tablet" type="checkbox" class="input-checkbox" /> On a tablet </label>
+            <label><input name="place-to-watch-films" value="on-a-mobile-phone" type="checkbox" class="input-checkbox" /> On a mobile phone </label>
+        </div>
+
+        <div class="form-group">
+          <p>Which streaming platform do you use the most to watch films</p>
+            <label><input name="streaming-platform" value="netflix" type="radio" class="input-radio" checked /> Netflix </label>
+            <label><input name="streaming-platform" value="amazon-prime-video" type="radio" class="input-radio" /> Amazon Prime Video </label>
+            <label><input name="streaming-platform" value="hulu" type="radio" class="input-radio" /> Hulu </label>
+            <label><input name="streaming-platform" value="disney+" type="radio" class="input-radio" /> Disney+ </label>
+            <label><input name="streaming-platform" value="hbo-max" type="radio" class="input-radio" /> HBO Max </label>
+            <label><input name="streaming-platform" value="apple-tv+" type="radio" class="input-radio" /> Apple TV+ </label>
+            <label><input name="streaming-platform" value="youtube-tv" type="radio" class="input-radio" /> Youtube TV </label>
+            <label><input name="streaming-platform" value="mubi" type="radio" class="input-radio" /> MUBI </label>
+            <label><input name="streaming-platform" value="illegal" type="radio" class="input-radio" /> Illegal Streaming Websites (gasp!) </label>
+        </div>
+
+        <div class="form-group">
+          <p>Do you prefer watching films alone or with others?</p>
+            <label><input name="prefer-watching" value="alone" type="radio" class="input-radio" checked /> Alone </label>
+            <label><input name="prefer-watching" value="with-family" type="radio" class="input-radio" /> With family </label>
+            <label><input name="prefer-watching" value="with-friends" type="radio" class="input-radio" /> With friends </label>
+        
+        <div class="form-group">
+          <p>Which of the following influences your decision to watch a film the most? <span class="clue">(Select all that apply)</span></p>
+            <label><input name="influences-in-watching" value="friends-reco" type="checkbox" class="input-checkbox" checked /> Friends' recommendations </label>
+            <label><input name="influences-in-watching" value="socmed" type="checkbox" class="input-checkbox" /> Social media buzz </label>
+            <label><input name="influences-in-watching" value="fave-actors" type="checkbox" class="input-checkbox" /> Favorite actors/actresses </label>
+            <label><input name="influences-in-watching" value="trailers" type="checkbox" class="input-checkbox" /> Film trailers </label>
+            <label><input name="influences-in-watching" value="reviews" type="checkbox" class="input-checkbox" /> Reviews and ratings </label>
+            <label><input name="influences-in-watching" value="directors" type="checkbox" class="input-checkbox" /> Director </label>
+            <label><input name="influences-in-watching" value="genres" type="checkbox" class="input-checkbox" /> Genre </label>
+            <label><input name="influences-in-watching" value="streaming-platform-reco" type="checkbox" class="input-checkbox" /> Streaming platform recommendations </label>
+            <label><input name="influences-in-watching" value="awards" type="checkbox" class="input-checkbox" /> Awards and nominations </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any additional comments or suggestions about films and viewing habits?</p>
+            <textarea id="comments" name="comments-suggestions" class="input-textarea" placeholder="Enter text" required></textarea>
+        </div>
+        
+        <input type="submit" value="Submit" class="submit-button" />
+
+      </form>
+    </div>
+  </body>
+</html>
